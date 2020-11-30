@@ -1,0 +1,156 @@
+<h1></h1>==> header
+<title>title </title>
+<br> ==> break
+<a href ="http://www.google.com">
+<p> paragraph
+<p style="color:red;">This is a red paragraph.</p> ==> for adding style
+<pre> to preserve spaces and line breaks </pre>
+<hr> horizontal line break
+<p>Do not forget to buy <mark>milk</mark> today.</p> ==> for highlighting text
+<img src="w3schools.jpg" alt="d.com" width="104" height="142">   ==> alt for highlight ==> src for path to imaghe
+
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+<a href="mailto:someone@example.com">Send email</a> ==> for sending mail
+
+
+link
+=====
+
+By default, a link will appear like this (in all browsers):
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+
+Create a Bookmark in HTML
+=========================
+
+First, use the id attribute to create a bookmark:
+Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+
+
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+
+
+map
+====
+use map to redirect to another image. based on are selection
+
+
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+tables
+======
+<table>
+<caption>
+
+<tr >
+<th colspan=2>
+<th rowspan=2>
+
+<td>
+
+
+iframe
+======
+An HTML iframe is used to display a web page within a web page.
+
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+
+CSS
+=====
+
+1)inline css:
+
+<h1 style="colr:red"> hello</h1>
+
+2) internal css
+
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+<h1>header</h1>
+<p>hello</p>
+</body>
+</html>
+
+
+3) external css
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/Users/bikash/Desktop/NLP/style.css">
+</head>
+<body>
+<h1>header</h1>
+<p>hello</p>
+</body>
+</html>
+
+
+
+style.css:
+-----------
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+
+
